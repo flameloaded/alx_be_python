@@ -1,11 +1,6 @@
 hours = 2
-minute = 60
-seconds = 60
 
-y = [hours, minute, seconds]
+seconds = hours * 3600
 
-total_sec = 1
-for x in y:
-    total_sec *= x
-print(total_sec)
-    
+print(seconds)
+
