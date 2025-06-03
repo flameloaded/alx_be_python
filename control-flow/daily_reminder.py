@@ -1,16 +1,15 @@
 enter_your_task = input("Enter your task: ").lower()
-priority = input("high/medium/low: ").lower()
-is_it_time_bound = input("yes/no: ").lower()
+priority = input("Priority (high/medium/low): ").lower()
+is_it_time_bound = input("Is it time-bound? (yes/no): ").lower()
 
 match priority:
     case "high" | "medium":
         if is_it_time_bound == "yes":
-            print("Finish project report is a high priority task that requires immediate attention today!")
+            print(f"{enter_your_task.capitalize()} is a high priority task that requires immediate attention today!")
         else:
-            print("The project is not of high priority")
+            print("The task is not time-bound.")
     case "low":
         if is_it_time_bound == "no":
-            print("Read a book is a low priority task. Consider completing it when you have free time.")
+            print(f"{enter_your_task.capitalize()} is a low priority task. Consider completing it when you have free time.")
         else:
-            print("The task is time-bound ")
-
+            print("The task is time-bound.")
