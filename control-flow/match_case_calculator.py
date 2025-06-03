@@ -4,16 +4,16 @@ operation = input("Choose the operation (+, -, *, /): ")
 
 match operation:
     case "+":
-        print(first_number+second_number)
+         print(f"The result is {first_number + second_number}")
     case "-":
-        print(first_number-second_number)
+        print(f"The result is {first_number - second_number}")
     case "/":
         if second_number == 0:
             print("Error: Can't divide by zero")
         else:
-            print(first_number/second_number)
+            print(f"The result is {first_number / second_number}")
     case "*":
-        print(first_number*second_number)
+        print(f"The result is {first_number * second_number}")
     case _:
         print("invalid operator.")
         
