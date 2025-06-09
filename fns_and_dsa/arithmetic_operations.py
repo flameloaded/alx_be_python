@@ -6,7 +6,8 @@ def perform_operation(num1, num2, operation):
     elif operation == "subtract":
         result = num1 - num2
     elif operation == "divide":
-        result = num1 / num2
-
+        if num2 == 0:
+            return "Error: Division by zero is undefined."
+        return num1 / num2
     return result
     
