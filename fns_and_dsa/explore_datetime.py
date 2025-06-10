@@ -14,6 +14,6 @@ def calculate_future_date(days):
     return formatted_future_date
 
 
-print((display_current_datetime()))
-days = int(input("input number of days:"))
-print(calculate_future_date(days))
+print((f"Current date and time: {display_current_datetime()}"))
+days = int(input("Enter the number of days to add to the current date: "))
+print((f"Future date: {calculate_future_date(days)}"))
