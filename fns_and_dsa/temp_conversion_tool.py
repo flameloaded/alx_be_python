@@ -13,7 +13,7 @@ def convert_to_fahrenheit(celsius):
 
 
 temperature = int(input("Enter the temperature to convert: "))
-units = input("Is this temperature in Celsius or Fahrenheit? (C/F)").lower()
+units = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").lower()
 
 if units == "f":
     print(f"{temperature} is {convert_to_fahrenheit(temperature)}F")
