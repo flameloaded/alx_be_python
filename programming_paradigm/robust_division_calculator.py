@@ -2,7 +2,7 @@ def safe_divide(numerator, denominator):
     try:
         result = int(numerator)/int(denominator)
     except ZeroDivisionError:
-        return "Cannot be divided by zero"
+        return "Error: Cannot divide by zero"
     except ValueError:
-        return "Must be numerical number"
+        return "Error: Please enter numeric values only."
     return result
